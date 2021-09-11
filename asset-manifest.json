@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Davron129/telegram-desktop-clone/static/css/main.871bfd6c.chunk.css",
+    "main.js": "/Davron129/telegram-desktop-clone/static/js/main.4f8198d7.chunk.js",
+    "main.js.map": "/Davron129/telegram-desktop-clone/static/js/main.4f8198d7.chunk.js.map",
+    "runtime-main.js": "/Davron129/telegram-desktop-clone/static/js/runtime-main.1cd7fd38.js",
+    "runtime-main.js.map": "/Davron129/telegram-desktop-clone/static/js/runtime-main.1cd7fd38.js.map",
+    "static/js/2.7dcd372e.chunk.js": "/Davron129/telegram-desktop-clone/static/js/2.7dcd372e.chunk.js",
+    "static/js/2.7dcd372e.chunk.js.map": "/Davron129/telegram-desktop-clone/static/js/2.7dcd372e.chunk.js.map",
+    "static/js/3.357fd75c.chunk.js": "/Davron129/telegram-desktop-clone/static/js/3.357fd75c.chunk.js",
+    "static/js/3.357fd75c.chunk.js.map": "/Davron129/telegram-desktop-clone/static/js/3.357fd75c.chunk.js.map",
+    "index.html": "/Davron129/telegram-desktop-clone/index.html",
+    "static/css/main.871bfd6c.chunk.css.map": "/Davron129/telegram-desktop-clone/static/css/main.871bfd6c.chunk.css.map",
+    "static/js/2.7dcd372e.chunk.js.LICENSE.txt": "/Davron129/telegram-desktop-clone/static/js/2.7dcd372e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1cd7fd38.js",
+    "static/js/2.7dcd372e.chunk.js",
+    "static/css/main.871bfd6c.chunk.css",
+    "static/js/main.4f8198d7.chunk.js"
+  ]
+}
