@@ -2,6 +2,9 @@ import React from 'react';
 import "./mainpage.scss";
 import { BiMenu } from 'react-icons/bi';
 import { IoChatbubblesSharp } from 'react-icons/io5'
+import { BsSearch } from 'react-icons/bs';
+import { BsReverseLayoutSidebarReverse } from 'react-icons/bs';
+import { HiDotsVertical } from 'react-icons/hi';
 
 const MainPage = () => {
     return (
@@ -53,8 +56,28 @@ const MainPage = () => {
                     }
                 </div>
             </div>
-            <div className="messages">
-
+            <div className="messages" >
+                <div className="top">
+                    <div className="chat_data">
+                        <div className="name">
+                            <span>TeraWeb</span>
+                        </div>
+                        <div className="members">
+                            <span>999K subscribers</span>
+                        </div>
+                    </div>
+                    <div className="right">
+                        <div className="icon">
+                            <BsSearch />
+                        </div>
+                        <div className="icon">
+                            <BsReverseLayoutSidebarReverse  />
+                        </div>
+                        <div className="icon">
+                            <HiDotsVertical  />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
