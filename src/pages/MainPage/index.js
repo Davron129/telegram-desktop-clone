@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./mainpage.scss";
 import { BiMenu } from 'react-icons/bi';
 import { IoChatbubblesSharp } from 'react-icons/io5'
 import { BsSearch } from 'react-icons/bs';
 import { BsReverseLayoutSidebarReverse } from 'react-icons/bs';
 import { HiDotsVertical } from 'react-icons/hi';
+import { HiOutlinePaperClip } from 'react-icons/hi';
+import { FaRegSmile } from 'react-icons/fa';
+import { IoSend } from 'react-icons/io5';
+import { BiMicrophone } from 'react-icons/bi';
+
+import MessagesImg from './../../assets/images/tinybirdgames_telegram_background_01.jpg';
 
 const MainPage = () => {
+    const [input, setInput] = useState("");
+
     return (
         <div className="main_page">
             <div className="folders">
@@ -56,7 +64,7 @@ const MainPage = () => {
                     }
                 </div>
             </div>
-            <div className="messages" >
+            <div className="messages" style={{backgroundImage: `url(${MessagesImg})`}} >
                 <div className="top">
                     <div className="chat_data">
                         <div className="name">
@@ -77,6 +85,160 @@ const MainPage = () => {
                             <HiDotsVertical  />
                         </div>
                     </div>
+                </div>
+                <div className="middle">
+                    <div className="message not_from_me">
+                        <div className="content">
+                            Testas
+                            da
+                            AIzaSyB2ufzc8RoKnri8Hjwlj5luQ1Q8BImnr8gasdfasdfasdfasdfasdfasdf
+                        </div>
+                        <div className="tail"></div>
+                        <div className="time">
+                            <span>{ new Date().getHours() } : { new Date().getMinutes() }</span>
+                        </div>
+                    </div>
+                    <div className="message from_me">
+                        <div className="content">
+                            Testas
+                            da
+                            AIzaSyB2ufzc8RoKnri8Hjwlj5luQ1Q8BImnr8gasdfasdfasdfasdfasdfasdf
+                        </div>
+                        <div className="tail"></div>
+                        <div className="time">
+                            <span>{ new Date().getHours() } : { new Date().getMinutes() }</span>
+                        </div>
+                    </div>
+                    <div className="message not_from_me">
+                        <div className="content">
+                            Testas
+                            da
+                            AIzaSyB2ufzc8RoKnri8Hjwlj5luQ1Q8BImnr8gasdfasdfasdfasdfasdfasdf
+                        </div>
+                        <div className="tail"></div>
+                        <div className="time">
+                            <span>{ new Date().getHours() } : { new Date().getMinutes() }</span>
+                        </div>
+                    </div>
+                    <div className="message from_me">
+                        <div className="content">
+                            Testas
+                            da
+                            AIzaSyB2ufzc8RoKnri8Hjwlj5luQ1Q8BImnr8gasdfasdfasdfasdfasdfasdf
+                        </div>
+                        <div className="tail"></div>
+                        <div className="time">
+                            <span>{ new Date().getHours() } : { new Date().getMinutes() }</span>
+                        </div>
+                    </div>
+                    <div className="message not_from_me">
+                        <div className="content">
+                            Testas
+                            da
+                            AIzaSyB2ufzc8RoKnri8Hjwlj5luQ1Q8BImnr8gasdfasdfasdfasdfasdfasdf
+                        </div>
+                        <div className="tail"></div>
+                        <div className="time">
+                            <span>{ new Date().getHours() } : { new Date().getMinutes() }</span>
+                        </div>
+                    </div>
+                    <div className="message from_me">
+                        <div className="content">
+                            Testas
+                            da
+                            AIzaSyB2ufzc8RoKnri8Hjwlj5luQ1Q8BImnr8gasdfasdfasdfasdfasdfasdf
+                        </div>
+                        <div className="tail"></div>
+                        <div className="time">
+                            <span>{ new Date().getHours() } : { new Date().getMinutes() }</span>
+                        </div>
+                    </div>
+                    <div className="message not_from_me">
+                        <div className="content">
+                            Testas
+                            da
+                            AIzaSyB2ufzc8RoKnri8Hjwlj5luQ1Q8BImnr8gasdfasdfasdfasdfasdfasdf
+                        </div>
+                        <div className="tail"></div>
+                        <div className="time">
+                            <span>{ new Date().getHours() } : { new Date().getMinutes() }</span>
+                        </div>
+                    </div>
+                    <div className="message from_me">
+                        <div className="content">
+                            Testas
+                            da
+                            AIzaSyB2ufzc8RoKnri8Hjwlj5luQ1Q8BImnr8gasdfasdfasdfasdfasdfasdf
+                        </div>
+                        <div className="tail"></div>
+                        <div className="time">
+                            <span>{ new Date().getHours() } : { new Date().getMinutes() }</span>
+                        </div>
+                    </div>
+                    <div className="message not_from_me">
+                        <div className="content">
+                            Testas
+                            da
+                            AIzaSyB2ufzc8RoKnri8Hjwlj5luQ1Q8BImnr8gasdfasdfasdfasdfasdfasdf
+                        </div>
+                        <div className="tail"></div>
+                        <div className="time">
+                            <span>{ new Date().getHours() } : { new Date().getMinutes() }</span>
+                        </div>
+                    </div>
+                    <div className="message from_me">
+                        <div className="content">
+                            Testas
+                            da
+                            AIzaSyB2ufzc8RoKnri8Hjwlj5luQ1Q8BImnr8gasdfasdfasdfasdfasdfasdf
+                        </div>
+                        <div className="tail"></div>
+                        <div className="time">
+                            <span>{ new Date().getHours() } : { new Date().getMinutes() }</span>
+                        </div>
+                    </div>
+                    <div className="message not_from_me">
+                        <div className="content">
+                            Testas
+                            da
+                            AIzaSyB2ufzc8RoKnri8Hjwlj5luQ1Q8BImnr8gasdfasdfasdfasdfasdfasdf
+                        </div>
+                        <div className="tail"></div>
+                        <div className="time">
+                            <span>{ new Date().getHours() } : { new Date().getMinutes() }</span>
+                        </div>
+                    </div>
+                    <div className="message from_me">
+                        <div className="content">
+                            Testas
+                            da
+                            AIzaSyB2ufzc8RoKnri8Hjwlj5luQ1Q8BImnr8gasdfasdfasdfasdfasdfasdf
+                        </div>
+                        <div className="tail"></div>
+                        <div className="time">
+                            <span>{ new Date().getHours() } : { new Date().getMinutes() }</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="bottom">
+                    <label className="file icon">
+                        <input type="file" hidden />
+                        <HiOutlinePaperClip />
+                    </label>
+                    <div className="input">
+                        <input 
+                            type="text"
+                            value={input}
+                            placeholder="Write message..."
+                            onChange={(e) => setInput(e.target.value)}  />
+                    </div>
+                    <div className="sticker icon">
+                        { <FaRegSmile /> }
+                    </div>
+                    <div className="microphone_send icon">
+                        { input === "" ? <BiMicrophone /> : <IoSend color="blue" /> }
+                    </div>
+
                 </div>
             </div>
         </div>

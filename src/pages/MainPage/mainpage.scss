@@ -1,10 +1,12 @@
+$dark: #0F0F0F;
+
 .main_page {
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 70px 400px auto;
     font-family: sans-serif;
-    // overflow: hidden;
+    scroll-behavior: smooth;
     .folders {
         height: 100%;
         background-color: #181818;
@@ -45,17 +47,15 @@
         height: 100vh;
         background-color: #212121;
         overflow-y: auto;
+        &:hover::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+        }
         &::-webkit-scrollbar {
             width: 5px;
             border-radius: 3px;
         }
-        &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-          }
-           
         &::-webkit-scrollbar-thumb {
-            background-color: darkgrey;
-            outline: 1px solid slategrey;
+            background-color: transparent;
         }
         .search_bar {
             height: 50px;
@@ -118,8 +118,9 @@
     }
     .messages {
         height: 100%;
-        background-color: #0F0F0F;
+        background-color: $dark;
         position: relative;
+        background-size: 300px;
         .top {
             height: 50px;
             padding: 0 1rem;
@@ -128,6 +129,7 @@
             justify-content: space-between;
             position: sticky;
             top: 0;
+            background-color: $dark;
             .chat_data {
                 .name {
                     span {
@@ -150,6 +152,97 @@
                     font-size: 20px;
                     cursor: pointer;
                 }
+            }
+        }
+        .middle {
+            padding: 1rem;
+            height: calc(100vh - 100px);
+            overflow: auto;
+            background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tinybirdgames.com%2F2017%2F04%2F11%2Ffreebies-telegram-backgrounds%2F&psig=AOvVaw2ImUqwdHzrZY5X1V31iaxM&ust=1631973354833000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPCVodOUhvMCFQAAAAAdAAAAABAt");
+            box-sizing: border-box !important;
+            &::-webkit-scrollbar {
+                width: 5px;
+                border-radius: 3px;
+            }
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+              }
+               
+            &::-webkit-scrollbar-thumb {
+                background-color: darkgrey;
+                outline: 1px solid slategrey;
+            }
+            .message {
+                max-width: 450px;
+                padding: 6px 50px 6px 8px;
+                margin-bottom: 8px;
+                display: inline-block;
+                position: relative;
+                color: #FFF;
+                background-color: $dark;
+                border-radius: 8px 8px 8px 0;
+                &.from_me {
+                    float: right;
+                    background-color: blue;
+                    border-radius: 8px 8px 0 8px;
+                    .tail {
+                        left: auto;
+                        right: -5px;
+                        border: none;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid blue;
+                    }
+                }
+                &:last-of-type {
+                    margin-bottom: 30px;
+                }
+                .content {
+                    font-size: 14px;
+                    word-break: break-all;
+                }
+                .time {
+                    font-size: 10px;
+                    position: absolute;
+                    right: 6px;
+                    bottom: 4px;
+                }
+                .tail {
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    bottom: 0;
+                    left: -5px;
+                    background-color: transparent;
+                    border-left: 10px solid transparent;
+                    border-bottom: 10px solid $dark;
+                }
+            }
+        }
+        .bottom {
+            width: 100%;
+            height: 50px;
+            display: grid;
+            grid-template-columns: 40px auto 40px 40px;
+            align-items: center;
+            background-color: $dark;
+            .input {
+                display: flex;
+                align-items: center;
+                input {
+                    width: 100%;
+                    outline: none;
+                    background-color: transparent;
+                    border: none;
+                    color: #FFF;
+                }
+            }
+            .icon {
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #999;
+                cursor: pointer;
             }
         }
     }
